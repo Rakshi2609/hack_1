@@ -2,6 +2,22 @@
 
 Campus Connect is a comprehensive Next.js-based platform designed to foster collaboration and communication among students. It provides a seamless environment for discovering peers, collaborating on projects, participating in discussions, and engaging in real-time chat through public channels or direct messages. The application features an enhanced user experience with rich profiles, instant notifications, and robust moderation tools to ensure a safe and productive community.
 
+## 🎨 Recent Updates
+
+### Landing Page Redesign
+The landing page has been completely reworked with a modern, aesthetic design featuring:
+- **Smooth Animations**: FadeIn effects, pulsing spotlights, and floating glows create a dynamic visual experience
+- **Enhanced Hero Section**: Full viewport hero with gradient backgrounds and animated elements
+- **Interactive Feature Cards**: Hover effects with shimmer animations and 3D transforms
+- **Improved Visual Hierarchy**: Better typography scaling, spacing, and color gradients
+- **Responsive Design**: Optimized for all screen sizes with smooth transitions
+
+### New Features
+- **Campus Canteen**: Browse menus from 3 campus canteens (North Square, Gazebo, Gymkhana) with prices, reviews, and ratings
+- **Interactive Quizzes**: 6 quiz categories with difficulty levels, time limits, and point systems
+- **Events Listing**: Display campus events with dates, locations, and tags
+- **Admin System**: Script to promote users to admin role (`npm run make-admin`)
+
 ## Features
 
 ### Core Functionality
@@ -16,9 +32,10 @@ Campus Connect is a comprehensive Next.js-based platform designed to foster coll
 
 - **Projects**: Create and manage collaborative projects, connect with team members.
 - **Discussions**: Engage in threaded discussions on various topics.
-- **Events**: Organize and participate in campus events.
-- **Quizzes**: Take and create quizzes for educational purposes.
+- **Events**: Organize and participate in campus events with location and date tracking.
+- **Quizzes**: Interactive quizzes across multiple categories (Programming, AI/ML, Database, etc.) with leaderboards.
 - **Skills**: List and discover skills offered by users.
+- **Canteen**: Browse menus, prices, and reviews from campus canteens (North Square, Gazebo, Gymkhana).
 
 ### Administrative Features
 
@@ -37,14 +54,15 @@ Campus Connect is a comprehensive Next.js-based platform designed to foster coll
 
 ## Tech Stack
 
-- **Frontend**: Next.js 16 with App Router, TypeScript, Mantine UI, React Toastify
+- **Frontend**: Next.js 16 with App Router, TypeScript, Mantine UI 8.x, React Toastify
 - **Backend**: Next.js API Routes, MongoDB with Mongoose
 - **Authentication**: Firebase Auth and Firebase Admin SDK
 - **Real-Time Communication**: Socket.io for chat
-- **Styling**: PostCSS with Mantine presets
+- **Styling**: PostCSS with Mantine presets, CSS Modules with animations
 - **Icons**: Tabler Icons, Lucide React
 - **Moderation**: Leo Profanity, Bad Words libraries
 - **Automation**: Puppeteer for browser automation
+- **Development**: ts-node for running TypeScript scripts
 
 ## Prerequisites
 
@@ -112,6 +130,23 @@ Before running the application, ensure you have the following installed:
    npm run lint
    ```
 
+4. **Make User Admin**:
+   ```bash
+   npm run make-admin
+   ```
+   Note: User must sign up first. Edit `scripts/makeAdmin.ts` to change the admin email.
+
+## Admin Setup
+
+To grant admin privileges to a user:
+
+1. Ensure the user has signed up through the platform
+2. Update the `ADMIN_EMAIL` in `scripts/makeAdmin.ts` if needed (default: rashith.ganjimut2024@vitstudent.ac.in)
+3. Run: `npm run make-admin`
+4. The script will connect to MongoDB and update the user's role to 'admin'
+
+See [ADMIN_SETUP.md](ADMIN_SETUP.md) for detailed instructions.
+
 
 ## Browser Notifications
 
@@ -138,9 +173,12 @@ Ensure `npm run build` passes locally before deployment.
 ```
 camp/
 ├── public/                 # Static assets
+├── scripts/                # Utility scripts
+│   └── makeAdmin.ts        # Admin role assignment script
 ├── src/
 │   ├── app/                # Next.js App Router
 │   │   ├── api/            # API routes
+│   │   ├── canteen/        # Canteen menus page
 │   │   ├── chat/           # Chat page
 │   │   ├── discussions/    # Discussions page
 │   │   ├── events/         # Events page
@@ -150,12 +188,15 @@ camp/
 │   │   ├── quizzes/        # Quizzes page
 │   │   ├── signup/         # Signup page
 │   │   ├── skills/         # Skills page
-│   │   └── users/          # Users directory
+│   │   ├── users/          # Users directory
+│   │   ├── page.tsx        # Landing page (redesigned)
+│   │   └── page.module.css # Landing page styles
 │   ├── blocklists/         # Moderation word lists
 │   ├── components/         # Reusable React components
 │   ├── lib/                # Utility libraries
 │   ├── models/             # Mongoose models
 │   └── types/              # TypeScript type definitions
+├── ADMIN_SETUP.md          # Admin setup documentation
 ├── eslint.config.mjs       # ESLint configuration
 ├── next.config.ts          # Next.js configuration
 ├── package.json            # Dependencies and scripts
