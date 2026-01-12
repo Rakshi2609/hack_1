@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "JavaScript Fundamentals",
+    "description": "Test your knowledge of core JavaScript concepts",
+    "category": "Programming",
+    "difficulty": "Medium",
+    "questions": 10,
+    "timeLimit": 15,
+    "points": 100,
+    "tags": ["javascript", "web development", "programming"]
+  },
+  {
+    "id": 2,
+    "title": "Data Structures & Algorithms",
+    "description": "Master the fundamentals of DSA",
+    "category": "Computer Science",
+    "difficulty": "Hard",
+    "questions": 15,
+    "timeLimit": 25,
+    "points": 150,
+    "tags": ["dsa", "algorithms", "problem solving"]
+  },
+  {
+    "id": 3,
+    "title": "React Basics",
+    "description": "Learn the essentials of React framework",
+    "category": "Frontend",
+    "difficulty": "Easy",
+    "questions": 8,
+    "timeLimit": 10,
+    "points": 80,
+    "tags": ["react", "frontend", "ui"]
+  },
+  {
+    "id": 4,
+    "title": "Database Management",
+    "description": "SQL queries and database design principles",
+    "category": "Backend",
+    "difficulty": "Medium",
+    "questions": 12,
+    "timeLimit": 20,
+    "points": 120,
+    "tags": ["sql", "database", "backend"]
+  },
+  {
+    "id": 5,
+    "title": "Python Programming",
+    "description": "Python syntax, libraries and best practices",
+    "category": "Programming",
+    "difficulty": "Easy",
+    "questions": 10,
+    "timeLimit": 12,
+    "points": 90,
+    "tags": ["python", "programming", "scripting"]
+  },
+  {
+    "id": 6,
+    "title": "Machine Learning Basics",
+    "description": "Introduction to ML concepts and algorithms",
+    "category": "AI/ML",
+    "difficulty": "Hard",
+    "questions": 20,
+    "timeLimit": 30,
+    "points": 200,
+    "tags": ["machine learning", "ai", "data science"]
+  }
+]

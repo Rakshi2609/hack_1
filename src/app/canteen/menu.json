@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "name": "North Square",
+    "location": "Near Main Gate",
+    "items": [
+      {
+        "id": 1,
+        "name": "Veg Thali",
+        "price": 60,
+        "description": "Rice, 2 chapatis, dal, sabzi, salad, pickle",
+        "available": true,
+        "rating": 4.2,
+        "reviews": [
+          { "user": "Raj Kumar", "comment": "Great value for money!", "rating": 4 },
+          { "user": "Priya S", "comment": "Dal is always perfect here", "rating": 5 }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Paneer Roll",
+        "price": 40,
+        "description": "Paneer tikka wrapped in soft roti",
+        "available": true,
+        "rating": 4.5,
+        "reviews": [
+          { "user": "Amit P", "comment": "Best roll in campus!", "rating": 5 },
+          { "user": "Neha M", "comment": "Could be spicier", "rating": 4 }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Chai",
+        "price": 10,
+        "description": "Hot masala chai",
+        "available": true,
+        "rating": 4.8,
+        "reviews": [
+          { "user": "Sandeep K", "comment": "Perfect tea!", "rating": 5 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Gazebo",
+    "location": "Central Garden Area",
+    "items": [
+      {
+        "id": 4,
+        "name": "Masala Dosa",
+        "price": 35,
+        "description": "Crispy dosa with potato filling and chutney",
+        "available": true,
+        "rating": 4.6,
+        "reviews": [
+          { "user": "Ramesh V", "comment": "Authentic South Indian taste", "rating": 5 },
+          { "user": "Kavya R", "comment": "Chutney is amazing!", "rating": 4 }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Idli Sambar",
+        "price": 30,
+        "description": "Soft idlis with sambar and coconut chutney",
+        "available": true,
+        "rating": 4.3,
+        "reviews": [
+          { "user": "Deepak N", "comment": "Healthy and tasty", "rating": 4 }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Filter Coffee",
+        "price": 20,
+        "description": "Traditional South Indian filter coffee",
+        "available": true,
+        "rating": 4.7,
+        "reviews": [
+          { "user": "Sridhar M", "comment": "Best coffee on campus!", "rating": 5 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Gymkhana",
+    "location": "Sports Complex",
+    "items": [
+      {
+        "id": 7,
+        "name": "Chicken Biryani",
+        "price": 80,
+        "description": "Hyderabadi style chicken biryani with raita",
+        "available": true,
+        "rating": 4.4,
+        "reviews": [
+          { "user": "Vikas T", "comment": "Decent portion size", "rating": 4 },
+          { "user": "Aisha K", "comment": "Spicy and delicious", "rating": 5 }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Egg Curry Rice",
+        "price": 50,
+        "description": "Rice with egg curry and salad",
+        "available": true,
+        "rating": 4.0,
+        "reviews": [
+          { "user": "Rohit S", "comment": "Good for post-workout meal", "rating": 4 }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Fruit Salad",
+        "price": 40,
+        "description": "Fresh seasonal fruits with honey",
+        "available": true,
+        "rating": 4.5,
+        "reviews": [
+          { "user": "Anjali D", "comment": "Very fresh and healthy", "rating": 5 },
+          { "user": "Karan L", "comment": "Perfect after gym", "rating": 4 }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Protein Shake",
+        "price": 60,
+        "description": "Banana protein shake",
+        "available": false,
+        "rating": 4.2,
+        "reviews": [
+          { "user": "Manoj G", "comment": "Tasty but often unavailable", "rating": 4 }
+        ]
+      }
+    ]
+  }
+]

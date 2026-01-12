@@ -89,6 +89,9 @@ export function Navbar() {
                   <Link href="/chat" className={classes.link}>
                     Chat
                   </Link>
+                  <Link href="/canteen" className={classes.link}>
+                    Canteen
+                  </Link>
                 </>
               )}
             </Group>
@@ -260,6 +263,13 @@ export function Navbar() {
                 onClick={closeDrawer}
               >
                 Chat
+              </Link>
+              <Link
+                href="/canteen"
+                className={classes.linkMobile}
+                onClick={closeDrawer}
+              >
+                Canteen
               </Link>
               <Link
                 href="/users"

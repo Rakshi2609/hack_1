@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Hackathon 2026",
+    "date": "2026-02-15",
+    "location": "Main Auditorium",
+    "description": "Annual 24-hour coding event for all students.",
+    "tags": ["coding", "competition", "team"]
+  },
+  {
+    "id": 2,
+    "title": "Tech Talk: AI Trends",
+    "date": "2026-03-10",
+    "location": "Seminar Hall 2",
+    "description": "Industry experts discuss the future of AI.",
+    "tags": ["AI", "seminar", "technology"]
+  },
+  {
+    "id": 3,
+    "title": "Cultural Fest",
+    "date": "2026-04-05",
+    "location": "Open Grounds",
+    "description": "Music, dance, and food stalls for everyone.",
+    "tags": ["culture", "music", "food"]
+  }
+]

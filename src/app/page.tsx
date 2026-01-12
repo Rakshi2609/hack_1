@@ -396,6 +396,18 @@ export default function Home() {
               color="indigo"
               href="/chat"
             />
+            <Feature
+              icon={
+                <IconSchool
+                  style={{ width: rem(28), height: rem(28) }}
+                  stroke={2}
+                />
+              }
+              title="Campus Canteen"
+              description="Browse menus, check prices, and read reviews of all campus canteens."
+              color="green"
+              href="/canteen"
+            />
           </SimpleGrid>
         </Container>
       </section>
@@ -508,6 +520,9 @@ export default function Home() {
                 </Text>
                 <Text component={Link} href="/chat" size="sm" c="dimmed">
                   Chat
+                </Text>
+                <Text component={Link} href="/canteen" size="sm" c="dimmed">
+                  Canteen
                 </Text>
               </Stack>
               <Stack gap="sm">
