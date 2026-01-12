@@ -12,15 +12,12 @@ yarn-debug.log*
 yarn-error.log*
 
 # Environment variables
-.env
-.env.*
 
 # OS files
 .DS_Store
 Thumbs.db
 
 # VSCode settings
-.vscode/
 
 # Coverage
 coverage/
@@ -32,3 +29,4 @@ coverage/
 
 # Optional: Ignore vercel build output
 .vercel/
+config.bat
