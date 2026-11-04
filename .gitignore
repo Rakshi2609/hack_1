@@ -29,3 +29,4 @@ coverage/
 
 # Optional: Ignore vercel build output
 .vercel/
+config.bat
